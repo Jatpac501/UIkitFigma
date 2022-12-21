@@ -11,10 +11,13 @@ body {
 }
 .NavBar {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .NavBar__Menu   {
     display: flex;
@@ -23,7 +26,6 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    margin-right: 30px;
 }
 .NavBar__Icon {
     width: 35px;
@@ -31,7 +33,6 @@ body {
 .NavBar__Name {
     font-size: 1.3em;
     font-weight: bold;
-    margin-right: 90px;
 }
 .NavBar__ButtonsBox {
     margin-right: 90px;
@@ -99,4 +100,431 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.PageNav {
+    max-width: 310px;
+    width: fit-content;
+    border-radius: 20px;
+    margin-left: 150px;
+}
+.PageNav__UserNotifactions {
+    width: fit-content;
+    border: 3px solid rgba(0, 0, 0, .05);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.PageNav__NotificationBox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    height: 60px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.PageNav__Main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+.PageNav__NotificationBox:nth-child(1) {
+    background-color: #8833FF;
+    color: #fff;
+}
+.PageNav__NotificationBox:nth-child(1)::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    content: '9';
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.4);
+}
+.PageNav__NotificationBox:nth-child(2) {
+    color: #FF6633;
+}
+.PageNav__NotificationBox:nth-child(2)::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    content: '2';
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #FF6633;
+}
+.PageNav__NotificationBox:nth-child(4)::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    content: '2';
+    color: rgba(0,0,0,.5);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.2);
+    background: #fff;
+}
+.PageNav__UserActions {
+    width: fit-content;
+    border: 3px solid rgba(0, 0, 0, .05);
+    border-radius: 20px;
+}
+.PageNav__DedlineBox {
+    background: #fff;
+    margin: 20px;
+    padding: 16px;
+    width: 260px;
+    border-radius: 10px;
+}
+.PageNav__DedlineTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 8px;
+}
+.PageNav__DevChatBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 102, 51, 0.15);
+    color: #FF6633;
+    border-radius: 10px;
+    height: 60px;
+    padding: 10px;
+}
+.NavPage__DevChatTitle {
+    font-size: 13px;
+    font-weight: bold;
+}
+.PageNav__UserCount {
+    margin: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". ."
+        ". ."; 
+}
+.PageNav__CountBox {
+    background-color: #fff;
+    max-width: 130px;
+    max-height: 130px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.PageNav__CountBox::before {
+    content: '';
+    color: #fff;
+    background: #6B7A99;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.PageNav__CountBox:nth-child(1)::before {
+    content: '3';
+    background-color: #29CC39;
+}
+.PageNav__CountBox:nth-child(2)::before {
+    content: '9';
+    background-color: #8833FF;
+}
+.PageNav__CountBox:nth-child(3)::before {
+    content: '2';
+    background-color: #3361FF;
+}
+.PageNav__CountBox:nth-child(4)::before {
+    content: '1';
+    background-color: #FF6633;
+}
+.PageNav__Recent {
+    background: #fff;
+    margin: 20px;
+    padding: 16px;
+    width: 260px;
+    border-radius: 10px;
+}
+.PageNav__RecentTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 8px;
+}
+.PageNav__RecentPrjBox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7F8FA;
+    color: #6B7A99;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 10px;
+    height: 60px;
+    padding: 10px;
+}
+.RecentPrjImg {
+    transform: rotate(-90deg);
+}
+.PageNav__RecentPrjBox:nth-child(5) {
+    color:#29CC39;
+    background-color: rgba(41, 204, 57, .1);
+}
+.MainContent {
+    display: flex;
+    flex-direction: row;
+    height: 1301px;
+    gap: 100px;
+}
+.Content__NavBar {
+    width: 62vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.Content__NavBarName {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+.Content__NavBarButtons {
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(0px 2px 5px rgba(38, 51, 77, 0.03));
+    border-radius: 30px;
+    overflow: hidden;
+}
+.Content__NavBarButton {
+    width: 110px;
+    height: 50px;
+    letter-spacing: .6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Content__UploadIcon {
+    width: 35px;
+    height: 35px;
+}
+.Content__NewPrj {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+.Content__ContentNav {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Content__ContentNavTabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-weight: bold;
+}
+.Content__ContentNavText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 60px;
+    height: 80px;
+}
+.Content__ContentNavText:nth-child(2) {
+    color: #8833FF;
+    border-radius: 1px;
+    border-bottom: 3px solid #8833FF;
+}
+.Content__ContentNavButton {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.Content__ContentNavNext {
+    transform: rotate(180deg);
+}
+.ContentLine {
+    position: relative;
+    opacity: .1;
+    border: 1px solid;
+}
+.Content__ContentActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+.Content__ContentActionBox {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    height: 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+}
+.Content__ContentActionIcon {
+    width: 40px;
+}
+.Content__ActionName {
+    width: 120px;
+}
+.Active {
+    color: #8833FF;
+}
+.Content__Tasks {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 51px;
+}
+.Content__TasksCardsName  {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+}
+.Content__TasksCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color:#fff;
+    background-color: #6B7A99;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+.TasksCount1 {
+    background-color: #FFCB33;
+}
+.TasksCount2 {
+    background-color: #29CC39;
+}
+.TasksCount3 {
+    background-color: #8833FF;
+}
+.TasksCount4 {
+    background-color: #33BFFF;
+}
+.TasksCount5 {
+    background-color: #FF6633;
+}
+.TasksCount6 {
+    background-color: #3361FF;
+}
+
+.Content__TasksCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 310px;
+    width: 155px;
+    border-radius: 10px;
+    border: 2px solid #F5F6F7;
+    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+    border-radius: 10px;
+}
+.Content__TasksActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Content__TaskAction-Flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 25px;
+}
+.Content__TaskAction-Flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 25px;
+    margin: 17px;
+}
+.Content__TaskAction-People {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 25px;
+    margin: 17px;
+}
+.Content__TasksButton {
+    width: 100px;
 }
