@@ -1,0 +1,85 @@
+@media (max-device-width: 1265px) {
+    .NavBar__SearchBox {
+        display: none;
+    }
+    .PageNav {
+        display: none;
+    }
+    .Content__ContentActions {
+        gap: 1vw;
+        margin: 5px;
+    }
+    .Content__ContentActionBox {
+        font-size: 14px;
+        height: 50px;
+    }
+    .Content__ActionName {
+        width: 12vw;
+    }
+    .Content__Tasks {
+        width: 90vw;
+    }
+    .Content__TasksCards {
+        width: 12vw;
+    }
+    .Content__ContentActions {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .Content__ContentNavText {
+        font-size: 20px;
+    }
+    .Content__Calenedar {
+        width: 90vw;
+    }
+    .Content__ContentNav {
+        width: 90vw;
+    }
+    .Content__NavBar {
+        width: 90vw;
+        margin-top: 5px;
+    }
+    .NavBar__Buttons:nth-child(3) {
+        display: none;
+    }
+    .NavBar__Buttons:nth-child(4) {
+        display: none;
+    }
+    .NavBar__Buttons:nth-child(5) {
+        display: none;
+    }
+    .Content__ContentNavText:nth-child(7) {
+        display: none;
+    }
+    .Content__ContentNavText:nth-child(8) {
+        display: none;
+    } 
+    .Content__ContentNavText:nth-child(9) {
+        display: none;
+    } 
+    .Content__NavBar {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "title new"
+          "navbar navbar"; 
+    }
+    .Content__NewPrj {
+        grid-area: new;
+        justify-self: end;
+        margin-right: 20px;
+    }
+    .Content__NavBarButtons {
+        grid-area: navbar;
+    }
+    .Content__NavBarButton {
+        width: 20vw;
+    }
+    .Content__NavBarName {
+        margin-left: 20px;
+    }
+}
